@@ -53,12 +53,6 @@ header h1{
     border-radius: 10px;
 }
 
-.lista-input input[type=submit]:hover{
-    background-color: rgb(1, 58, 44);
-    color: white;
-    cursor: pointer;
-}
-
 .produtos-lista{
     display: flex;
     flex-direction: column;
@@ -105,7 +99,16 @@ header h1{
     text-align: center;
     color: white;
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    width: max-content;
+}
+
+@media (min-width:769px) {
+    .lista-input input[type=submit]:hover{
+        background-color: rgb(1, 58, 44);
+        color: white;
+        cursor: pointer;
+    }
 }
