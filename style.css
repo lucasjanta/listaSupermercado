@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+header{
+    background-color: rgb(1, 58, 44);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+header h1{
+    color: white;
+    font-weight: 700;
+    font-size: 3.5em;
+    text-align: center;
+    text-justify: center;
+}
+
+.lista-input{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+.lista-input input[type=text]{
+    height: 3.5em;
+    width: 25em;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.lista-input input[type=number]{
+    height: 3.5em;
+    width: 10em;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.lista-input input[type=submit]{
+    width: 6em;
+    border: 1px solid rgb(1, 58, 44);
+    border-radius: 10px;
+}
+
+.lista-input input[type=submit]:hover{
+    background-color: rgb(1, 58, 44);
+    color: white;
+    cursor: pointer;
+}
+
+.produtos-lista{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width:fit-content;
+    border: solid 2px rgb(87, 101, 98);
+    border-radius: 5px;
+    padding: 2px;
+    /* justify-items: center; */
+}
+
+.produto-single{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.produto-single:nth-child(odd){
+    background-color: rgb(216, 216, 216);
+}
+
+.produto-single h2{
+    font-weight: 500;
+}
+
+.produto-single h3{
+    margin: auto 0;
+}
+
+.produto-single h3 span{
+    background-color: rgb(33, 102, 84);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.valor-total{
+    background-color: rgb(1, 58, 44);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
