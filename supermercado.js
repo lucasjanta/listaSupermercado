@@ -40,8 +40,8 @@ document.querySelector("input[type=submit]").addEventListener('click', ()=>{
     })
 
     var selecionaItem = document.querySelectorAll('.produto-single');
-    var noCarrinho = document.querySelector('.check');
-    var deletar = document.querySelector('.delete');
+    // var noCarrinho = document.querySelector('.check');
+    // var deletar = document.querySelector('.delete');
 
     for (let i = 0; i < selecionaItem.length; i++) {
         selecionaItem[i].setAttribute('id', `item`+ i);
@@ -51,6 +51,7 @@ document.querySelector("input[type=submit]").addEventListener('click', ()=>{
             botaozin.style.position = "absolute";
             botaozin.style.left = event.clientX + "px";
             botaozin.style.top = event.clientY + "px";
+            //tentar fazer de outra forma?
             itemescolhido = document.querySelector(`#item`+ i);
         })
     }
@@ -59,11 +60,6 @@ document.querySelector("input[type=submit]").addEventListener('click', ()=>{
             // Seleciona o item desejado e adiciona a classe "line-through"
                 itemescolhido.classList.add("line-through");
             });
-
-    $('.delete').click(function(){
-        // Seleciona o item desejado e adiciona a classe "line-through"
-        itemescolhido.innerHTML = "";
-        });
     
 })
 

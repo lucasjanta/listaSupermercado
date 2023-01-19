@@ -139,6 +139,8 @@ header h1{
     border-radius: 10px;
 }
 
+/* Classe teste para funcionalidade nova */
+
 .line-through{
     text-decoration: line-through;
 }
