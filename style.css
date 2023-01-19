@@ -105,10 +105,60 @@ header h1{
     width: max-content;
 }
 
+.limpar{
+    display: flex;
+    width: 8em;
+    height: 3em;
+    border: 1px solid rgb(1, 58, 44);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 100px;
+}
+
+.floatinfo{
+    display: none;
+}
+
+.balao-toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 15px 35px;
+    border: 2px solid rgb(1, 58, 44);
+    border-radius: 10px;
+    border-top-left-radius: 0;
+}
+
+.floatinfo button{
+    padding: 10px 25px;
+    
+    border: 1px solid rgb(1, 58, 44);
+    color: rgb(1, 58, 44);
+    border-radius: 10px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
 @media (min-width:769px) {
     .lista-input input[type=submit]:hover{
         background-color: rgb(1, 58, 44);
         color: white;
         cursor: pointer;
+    }
+
+    .limpar:hover{
+        background-color: rgb(1, 58, 44);
+        color: white;
+        cursor: pointer;
+    }
+
+    .floatinfo button:hover{
+        cursor: pointer;
+        background-color: rgb(1, 58, 44);
+        color: white;
     }
 }
